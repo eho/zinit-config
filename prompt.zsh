@@ -4,15 +4,18 @@ setopt prompt_subst
 autoload colors
 colors
 
-zinit wait lucid for \
-        OMZL::git.zsh \
-  atload"unalias grv" \
-        OMZP::git
+zinit light OMZL::git.zsh
+zinit light OMZL::prompt_info_functions.zsh
+
+# zinit wait lucid for \
+#         OMZL::git.zsh \
+#   atload"unalias grv" \
+#         OMZP::git
 
 PS1="READY >" # provide a simple prompt till the theme loads
 
-zinit wait'!' lucid for \
-    OMZL::prompt_info_functions.zsh
+# zinit wait'!' lucid for \
+#     OMZL::prompt_info_functions.zsh
 
 
 # zinit ice atinit"zicompinit; zicdreplay"
