@@ -4,22 +4,10 @@ setopt prompt_subst
 autoload colors
 colors
 
-zinit light OMZL::git.zsh
-zinit light OMZL::prompt_info_functions.zsh
-
-# zinit wait lucid for \
-#         OMZL::git.zsh \
-#   atload"unalias grv" \
-#         OMZP::git
-
 PS1="READY >" # provide a simple prompt till the theme loads
 
-# zinit wait'!' lucid for \
-#     OMZL::prompt_info_functions.zsh
-
-
-# zinit ice atinit"zicompinit; zicdreplay"
-# zinit light zdharma/fast-syntax-highlighting
+zinit ice atinit"zicompinit; zicdreplay"
+zinit light zdharma/fast-syntax-highlighting
 
 # zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
 #     atpull'%atclone' pick"clrs.zsh" nocompile'!' \
