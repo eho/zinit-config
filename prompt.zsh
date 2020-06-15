@@ -1,5 +1,5 @@
 # https://zdharma.org/zinit/wiki/Example-Oh-My-Zsh-setup/
-setopt prompt_subst
+setopt promptsubst
 
 autoload colors
 colors

@@ -9,5 +9,14 @@
 # Then ${0:h} to get plugin’s directory
 plugin_path=${0:h}
 
+
+#
+# git plugin
+#
+zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/git.zsh
+zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/prompt_info_functions.zsh
+zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
+
+
 source ${plugin_path}/prompt.zsh
 source ${plugin_path}/settings.zsh
