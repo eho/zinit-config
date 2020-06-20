@@ -20,3 +20,17 @@ Then, append this to the end of .zshrc.
 zinit light eho/zinit-config
 
 ```
+
+
+Auto completion must be initialized before the Zinit's installer chunk.
+Place the following just BEFORE the Zinit's installer chunk that was auto added in .zshrc.
+
+```
+
+# 
+# Enable auto completion
+#
+autoload -U compinit
+compinit
+
+```

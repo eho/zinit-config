@@ -7,7 +7,7 @@ setopt automenu
 
 
 # 
-# Enable auto completion
+# https://github.com/zsh-users/zsh-completions
 #
-autoload -U compinit
-compinit
+zinit ice blockf
+zinit light zsh-users/zsh-completions
