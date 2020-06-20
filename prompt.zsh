@@ -23,7 +23,7 @@ host="%{$fg[cyan]%}%m%{$reset_color%}"
 current_dir="%{$terminfo[bold]%}%~%{$reset_color%}"
 prompt_char="%{$terminfo[bold]$fg[magenta]%}% $%{$reset_color%}"
 # git_branch="%{$fg[blue]%}[$(git_current_branch)]%{$reset_color%}"
-date_time='%{$fg[yellow]%}% %D{%a %b %d, %I:%M}%{$reset_color%}'
+date_time='%{$fg[yellow]%}% %D{%a %b %d, %I:%M:%S %Z}%{$reset_color%}'
 
 PROMPT="${bracket_start}${host}:${current_dir}${bracket_end}
 ${bracket_start}${user}@${bracket_end}${prompt_char} "
