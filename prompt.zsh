@@ -34,3 +34,21 @@ ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+
+
+#
+# Example of updating prompt
+#
+
+# get_git_branch_prompt_info() {
+#     git_branch="%{$fg[blue]%}[$(git_current_branch)]%{$reset_color%}"
+# }
+
+# get_prompt() {
+#     get_git_branch_prompt_info
+#     PROMPT="${bracket_start}${host}:${current_dir}${bracket_end}${git_branch}
+# ${bracket_start}${user}@${bracket_end}${prompt_char} "
+#     RPROMPT="${bracket_start}${date_time}${bracket_end}"
+# }
+
+# precmd_functions+=(get_prompt)
