@@ -25,9 +25,10 @@ prompt_char="%{$terminfo[bold]$fg[magenta]%}% $%{$reset_color%}"
 # git_branch="%{$fg[blue]%}[$(git_current_branch)]%{$reset_color%}"
 date_time='%{$fg[yellow]%}% %D{%a %b %d, %I:%M:%S %Z}%{$reset_color%}'
 
-PROMPT="${bracket_start}${host}:${current_dir}${bracket_end}
+PROMPT="${bracket_start}${host}:${current_dir}${bracket_end}${bracket_start}${date_time}${bracket_end}
 ${bracket_start}${user}@${bracket_end}${prompt_char} "
-RPROMPT="${bracket_start}${date_time}${bracket_end}"
+RPROMPT=
+#RPROMPT="${bracket_start}${date_time}${bracket_end}"
 PS2=$' \e[0;34m%}%B>%{\e[0m%}%b '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:(%{$fg[red]%}"
