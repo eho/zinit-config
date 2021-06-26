@@ -18,5 +18,5 @@ zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/prompt_info_fun
 zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh
 
 
-source ${plugin_path}/prompt.zsh
 source ${plugin_path}/settings.zsh
+source ${plugin_path}/prompt.zsh
