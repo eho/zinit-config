@@ -21,3 +21,6 @@ zinit snippet https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plu
 source ${plugin_path}/settings.zsh
 source ${plugin_path}/prompt.zsh
 source ${plugin_path}/extras.zsh
+
+# Initialize completions after all plugins are loaded
+zicompinit; zicdreplay -q
