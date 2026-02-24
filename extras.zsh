@@ -14,7 +14,6 @@ export PYTORCH_ENABLE_MPS_FALLBACK=1
 # PATH additions (for personal tools that are expected on every machine)
 #
 export PATH="$HOME/.cronus/bin:$PATH"
-export PATH="$HOME/scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 #
