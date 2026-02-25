@@ -13,6 +13,11 @@ Personal zsh configuration managed via [zinit](https://github.com/zdharma-contin
 
 ## New Machine Setup
 
+If you are setting up a brand new Mac, you should use the automated setup script from my [init-machine](https://github.com/eho/init-machine) repository instead. It automatically installs zinit and configures `~/.zshrc` to load this configuration, along with Node, Python, AWS tools, and more.
+
+<details>
+<summary><b>Manual Installation (Standalone)</b></summary>
+
 ### 1. Prerequisites
 
 Make sure `git` and `zsh` are available. On macOS both come pre-installed. If you've installed Homebrew, you can get the latest git with:
@@ -57,6 +62,8 @@ exec zsh
 ```
 
 Zinit will automatically clone this repo and source everything on first load.
+
+</details>
 
 ## Updating
 
