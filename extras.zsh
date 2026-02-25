@@ -22,3 +22,11 @@ export PATH="$HOME/.local/bin:$PATH"
 function cronus-update-api-token-from-clipboard() {
   export CRONUS_API_TOKEN=$(pbpaste)
 }
+
+#
+# Node.js (fnm Fast Node Manager)
+#
+export PATH="$HOME/.local/share/fnm:$PATH"
+if command -v fnm &>/dev/null; then
+  eval "$(fnm env --use-on-cd)"
+fi
