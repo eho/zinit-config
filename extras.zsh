@@ -15,6 +15,7 @@ export PYTORCH_ENABLE_MPS_FALLBACK=1
 #
 export PATH="$HOME/.cronus/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH" # MacPorts
 
 #
 # Custom functions
