@@ -31,3 +31,10 @@ export PATH="$HOME/.local/share/fnm:$PATH"
 if command -v fnm &>/dev/null; then
   eval "$(fnm env --use-on-cd)"
 fi
+
+#
+# Local secrets (not tracked by Git)
+#
+if [[ -f "$HOME/.secrets" ]]; then
+  source "$HOME/.secrets"
+fi

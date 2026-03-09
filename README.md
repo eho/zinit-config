@@ -75,6 +75,20 @@ zinit self-update
 zinit update --all
 ```
 
+## Secrets Management
+
+This configuration automatically sources local, machine-specific secrets if they are placed in `~/.secrets`.
+This file is **not tracked by version control**, ensuring you do not accidentally commit API keys or authentication tokens publicly.
+
+To set this up:
+
+1. Copy the example file: `cp .secrets.example ~/.secrets`
+2. Restrict permissions (highly recommended): `chmod 600 ~/.secrets`
+3. Add your secrets to `~/.secrets` (e.g., `export GH_TOKEN="..."`)
+4. Restart your shell: `exec zsh`
+
+Variables placed in this file will be globally available in every terminal session on that machine.
+
 ## Customising `extras.zsh`
 
 `extras.zsh` is the place for anything portable that should follow you across machines:
